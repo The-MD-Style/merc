@@ -1,0 +1,11 @@
+$colors: (
+  white: #F9F9F9,
+  green: #24AB70,
+  green2: #24AB70,
+);
+
+:export {
+  white: map-get($colors, white);
+  green: map-get($colors, green);
+  green2: map-get($colors, green2);
+}
