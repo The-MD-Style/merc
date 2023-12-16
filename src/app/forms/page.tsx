@@ -18,9 +18,9 @@ type forms = {
     __v: number
 }
 
-const page = (props: Props) => {
+const Forms = (props: Props) => {
 
-    const [Forms, setForms] = useState<forms[]>([]);
+    const [forms, setForms] = useState<forms[]>([]);
 
 
     const deleteForm = (id:string) => {
@@ -43,7 +43,7 @@ const page = (props: Props) => {
     return (
         <SectionContainer>
           <div className={classes['wrapper']}>
-            {Forms.map((item) => (
+            {forms.map((item) => (
             <ul key={item._id}>
                   <li>SteamID - <b>{item.SteamID}</b></li>
                   <li>Средний онлайн - <b>{item.DailyOnline}</b></li>
@@ -61,4 +61,4 @@ const page = (props: Props) => {
   )
 }
 
-export default page
+export default Forms;
