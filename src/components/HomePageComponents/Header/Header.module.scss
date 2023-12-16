@@ -1,0 +1,50 @@
+.header{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../../../assets/images/background5.jpg') ;
+    background-repeat: no-repeat;
+  
+    img{
+      z-index: 0;
+      position: absolute;
+    }
+  
+    .wrapper{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 1;
+      gap:20px;
+        h1, h3{
+          text-align: center;
+          -webkit-text-stroke: 3px black;
+          outline: black;
+          color: #FFF;
+          font-family: GeometriaBold;
+          font-size: 100px;
+          font-weight: 100;
+        }
+  
+        h1{
+          margin-bottom: -40px;
+        }
+        
+        h3{
+          line-height: 60px;
+          margin-bottom: 148px;
+          font-size: 50px; 
+          font-family: Geometria;
+          font-weight: 800;
+          -webkit-text-stroke: 1px black;
+  
+        }
+    }
+  
+  }

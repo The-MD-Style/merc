@@ -1,0 +1,28 @@
+.wrapper{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    color:white;
+    font-family: Geometria;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 20px 30px;
+        width: 70%;
+        background: #000;
+        border-radius: 20px;
+        position: relative;
+        .trash{
+            position: absolute;
+            cursor: pointer;
+            bottom: 25px;
+            right: 25px;
+        }
+    }
+}

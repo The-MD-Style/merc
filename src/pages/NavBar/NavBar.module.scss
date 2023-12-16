@@ -1,0 +1,35 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    z-index: 100;
+    background: #181c34;
+    border-bottom: 3px solid black;
+    .logo{
+
+        display: flex;
+        align-items: center;
+        img{
+            width: 66px;
+            height: 60px;
+            margin-right: 12px;
+        }
+        p{
+            height: 72px;
+            -webkit-text-stroke: 0.5px black;
+            color: #FFF;
+            font-family: Geometria;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal; 
+            span{
+                font-family: GeometriaBold;
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+    }
+}
