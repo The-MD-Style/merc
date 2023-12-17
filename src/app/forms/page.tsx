@@ -1,7 +1,7 @@
 "use client"
 
 import SectionContainer from '@/Containers/SectionContainer/SectionContainer'
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import classes from "./page.module.scss"
 import axios from 'axios'
 type Props = {}
@@ -23,9 +23,9 @@ const Forms = (props: Props) => {
     const [forms, setForms] = useState<forms[]>([]);
 
 
-    const deleteForm = (id:string) => {
-      axios.delete(`https://merc-api-site.vercel.app/api/form/${id}`)
-    }
+    const deleteForm = useCallback((id: string) => {
+      axios.delete(`https://merc-api-site.vercel.app/api/form/${id}`);
+    }, []);
 
 
     useEffect(() => {
